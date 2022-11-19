@@ -52,7 +52,7 @@ const Button1 = styled.button`
 width: 200px;
 height: 40px;
 border-radius: 10px;  
-border: 10px solid AliceBlue;
+border: 10px solid GhostWhite;
 margin-top:50px;`
 function LoginPage() {
   const [user, setUser] = useState({
