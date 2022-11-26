@@ -51,14 +51,15 @@ const Input1 = styled.input`
 `;
 
 const Button1 = styled.button`
-width: 200px;
-font-size: 25px;
-height: 50px;
-width: 80%;
-background-color:Snow;
-border-radius: 10px;  
-border: 10px solid Snow;
-margin-top:50px;`
+  width: 200px;
+  font-size: 25px;
+  height: 50px;
+  width: 80%;
+  background-color: Snow;
+  border-radius: 10px;
+  border: 10px solid Snow;
+  margin-top: 50px;
+`;
 function LoginPage() {
   const navigate = useNavigate();
   const [user, setUser] = useState({
@@ -98,8 +99,11 @@ function LoginPage() {
           type="password"
           onChange={onChangeUser}
         ></Input1>
-    <Button1><a href="  "  target="_blank">Log in</a></Button1>
-
+        <Button1 onClick={navigateToMainPage}>
+          <a href="  " target="_blank">
+            Log in
+          </a>
+        </Button1>
       </LabelWrapper>
     </Wrapper>
   );
