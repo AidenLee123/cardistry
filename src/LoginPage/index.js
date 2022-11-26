@@ -50,9 +50,12 @@ padding-left: 10px;`
 
 const Button1 = styled.button`
 width: 200px;
-height: 40px;
+font-size: 25px;
+height: 50px;
+width: 80%;
+background-color:Snow;
 border-radius: 10px;  
-border: 10px solid GhostWhite;
+border: 10px solid Snow;
 margin-top:50px;`
 function LoginPage() {
   const [user, setUser] = useState({
@@ -85,7 +88,7 @@ function LoginPage() {
         type="password"
         onChange={onChangeUser}
         ></Input1>
-    <Button1><a href=""  target="_blank">다음페이지로 넘어가는 버튼</a></Button1>
+    <Button1><a href="  "  target="_blank">Log in</a></Button1>
 
       </LabelWrapper>
     </Wrapper>
