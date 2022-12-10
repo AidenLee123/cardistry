@@ -1,0 +1,26 @@
+.threeholder {
+  display: flex;
+  flex-direction: row;
+  margin-top: 0px;
+  width: 800px;
+  height: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.threeone {
+  width: 50%;
+  height: 100%;
+  margin-left: 20px;
+  background: #363636;
+  border-bottom: 15px solid #f5cb22;
+  text-align: center;
+  transition: all 0.25s;
+}
+
+.threeone:hover {
+  background: #f5cb22;
+}
+
+.threeone:hover .title {
+  color: black;
+}
