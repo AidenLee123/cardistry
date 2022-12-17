@@ -84,12 +84,9 @@ function MainPage() {
         </div>
         <div class="threeone">
           <MagicTitle className="title">Gambling Techniques</MagicTitle>
-          <ListText
-            className="text"
-            onClick={() => navigateToLearnMorePage("/casino")}
-          >
-            1. Casino Shuffle Sequence
-          </ListText>
+          
+            <ListText onClick={() => navigateToLearnMorePage("/Casin")}>
+            1. Casino Shuffle Sequence</ListText>
           <ListText onClick={() => navigateToLearnMorePage("/grips")}>
             2. Different grips by country</ListText>
           <ListText onClick={() => navigateToLearnMorePage("/ribbon")}>

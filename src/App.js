@@ -4,9 +4,8 @@ import LoginPage from "./LoginPage";
 import MainPage from "./MainPage";
 import AcanPage from "./LearnPage/acan";
 import DetectorPage from "./LearnPage/detector";
-import MamaPage from "./LearnPage/mama";
-import DrunkPage from "./LearnPage/drunk";
-import TopPage from "./LearnPage/top";
+import DrunkPage from "./LearnPage/Drunk";
+import TopPage from "./LearnPage/Top";
 import AmbitiousPage from "./LearnPage/ambitious";
 
 import { Routes, Route } from "react-router-dom";
