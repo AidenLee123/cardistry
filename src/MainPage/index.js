@@ -92,25 +92,6 @@ function MainPage() {
         </div>
         <div class="threeone">
           <MagicTitle className="title">Gambling Techniques</MagicTitle>
-<<<<<<< HEAD
-          
-          <ListText onClick={() => navigateToLearnMorePage("/casin")}>
-            1. Casino Shuffle Sequence</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/grips")}>
-            2. Different grips by country</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/ribbon")}>
-            3. Ribbon spread</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/texas-holdem")}>
-            4. Dealing at Texas Hold'em</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/false")}>
-            5. Fasle Shuffle</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/nufflying")}>
-            6. Nullifying the cut</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/bottom-deal")}>
-            7. Bottom Deal</ListText>
-          <ListText onClick={() => navigateToLearnMorePage("/gather")}>
-            8. How to gather the high cards from the shuffled cards
-=======
 
           <Link to="/Casin" target="_blank">
             <ListText> 1. Casino Shuffle Sequence</ListText>
@@ -144,7 +125,6 @@ function MainPage() {
             <ListText>
               {" "}
               8. How to gather the high cards from the shuffled cards
->>>>>>> 80084ae8d3fc3dfc5ca80a285fe86f6664a3dabc
             </ListText>
           </Link>
 
