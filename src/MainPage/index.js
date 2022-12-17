@@ -53,15 +53,34 @@ function MainPage() {
           <ListText onClick={() => navigateToLearnMorePage("/acan")}>
             1. ACAN
           </ListText>
-          <ListText>2. lie detector</ListText>
-          <ListText>3. Red Hot Mama</ListText>
-          <ListText>4. Drunk Magician</ListText>
-          <ListText>5. Ace on top</ListText>
-          <ListText>6. Ambitious Card Magic</ListText>
-          <ListText>7. Out of this World</ListText>
-          <ListText>8. Arobatic Ace</ListText>
-          <ListText>9. Mental magic</ListText>
-          <ListText>10. Smart Phone magic</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/detector")}>
+            2. lie detector
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/mama")}>
+            3. Red Hot Mama
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/drunk")}>
+            4. Drunk Magician
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/top")}>
+            5. Ace on top
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/ambitious")}>
+            6. Ambitious Card Magic
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/out")}>
+            7. Out of this World
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/arobatic")}>
+            8. Arobatic Ace
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/mental")}>
+            9. Mental Magic
+          </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/phone")}>
+            10. Smart Phone Magic
+          </ListText>
+          
         </div>
         <div class="threeone">
           <MagicTitle className="title">Gambling Techniques</MagicTitle>
@@ -71,23 +90,34 @@ function MainPage() {
           >
             1. Casino Shuffle Sequence
           </ListText>
-          <ListText className="text">2. Different grips by country</ListText>
-          <ListText className="text">3. Ribbon spread</ListText>
-          <ListText className="text">4. Dealing at Texas Hold'em</ListText>
-          <ListText className="text">5. Fasle Shuffle</ListText>
-          <ListText className="text">6. Nullifying the cut</ListText>
-          <ListText className="text">7. Bottom Deal</ListText>
-          <ListText className="text">
+          <ListText onClick={() => navigateToLearnMorePage("/grips")}>
+            2. Different grips by country</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/ribbon")}>
+            3. Ribbon spread</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/texas-holdem")}>
+            4. Dealing at Texas Hold'em</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/false")}>
+            5. Fasle Shuffle</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/nufflying")}>
+            6. Nullifying the cut</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/bottom-deal")}>
+            7. Bottom Deal</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/gather")}>
             8. How to gather the high cards from the shuffled cards
-          </ListText>
-          <ListText>9. Stacking the Deck</ListText>
-          <ListText>10.Mucking cards</ListText>
-          <ListText>
+            </ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/stacking")}>
+            9. Stacking the Deck</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/mucking")}>
+            10.Mucking cards</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/manipulate")}>
             11.How to manipulate the opponent's shuffled cards
           </ListText>
-          <ListText>12.Three Card Monte</ListText>
-          <ListText>13.Card Sping</ListText>
-          <ListText>14.One hand Shuffle and Cut</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/monte")}>
+            12.Three Card Monte</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/spring")}>
+            13.Card Spring</ListText>
+          <ListText onClick={() => navigateToLearnMorePage("/one-hand")}>
+            14.One hand Shuffle and Cut</ListText>
         </div>
       </div>
     </Wrapper>
