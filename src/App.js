@@ -7,6 +7,7 @@ import DetectorPage from "./LearnPage/detector";
 import DrunkPage from "./LearnPage/Drunk";
 import TopPage from "./LearnPage/Top";
 import AmbitiousPage from "./LearnPage/ambitious";
+import CasinoPage from "./LearnPage/casino";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -21,8 +22,7 @@ function App() {
       <Route path="/drunk" element={<DrunkPage />} />
       <Route path="/top" element={<TopPage />} />
       <Route path="/ambitious" element={<AmbitiousPage />} />
-     
-
+      <Route path="/casino" element={<CasinoPage />} />
     </Routes>
   );
 }

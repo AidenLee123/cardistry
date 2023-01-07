@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import "./index.scss";
-import Card from "./card.png";
+import Card from "../Images/card.png";
 import { useNavigate, Link } from "react-router-dom";
 
 const Wrapper = styled.div`
@@ -93,7 +93,7 @@ function MainPage() {
         <div class="threeone">
           <MagicTitle className="title">Gambling Techniques</MagicTitle>
 
-          <Link to="/Casin" target="_blank">
+          <Link to="/casino" target="_blank">
             <ListText> 1. Casino Shuffle Sequence</ListText>
           </Link>
 
