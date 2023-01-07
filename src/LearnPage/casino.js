@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
 import RRSR1 from "../Images/rrsr1.jpeg";
-import Magic from "../Images/magic.jpeg";
+import RRSR2 from "../Images/rrsr2.jpeg";
 
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
+import "./index.css";
+
 
 const Wrapper = styled.div`
   background-color: white;
@@ -24,7 +25,7 @@ const Title = styled.div`
 `;
 
 const ImageWrapper = styled.img`
-  width: 100%;
+  width: 800px;
   height: 300px;
 `;
 
@@ -34,6 +35,7 @@ const ImageWrapper = styled.img`
 
   const images = [
    `${RRSR1}`,
+   `${RRSR2}`,
 
   ];
 
@@ -41,7 +43,6 @@ const ImageWrapper = styled.img`
   return (
     <Wrapper>
       <Title>Casino</Title>
-
       <Fade>
         {images.map((image, index) => (
           <div className="each-fade" key={index}>
@@ -49,6 +50,8 @@ const ImageWrapper = styled.img`
       </div>
         ))}
       </Fade>
+
+    
     </Wrapper>
   );
 }
