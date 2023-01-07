@@ -38,10 +38,16 @@ const ImageWrapper = styled.img`
   height: 300px;
 `;
 
+const DescriptionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+`;
 
-  function CasinoPage() {
-
-
+const Description = styled.div`
+  font-size: 24px;
+`;
+function CasinoPage() {
   const images = [
    `${RRSR1}`,
    `${RRSR2}`,
@@ -63,8 +69,9 @@ const ImageWrapper = styled.img`
       </div>
         ))}
       </Fade>
-
-    
+      <DescriptionWrapper>
+        <Description>dd</Description>
+      </DescriptionWrapper>
     </Wrapper>
   );
 }
