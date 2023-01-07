@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Magic from "../Images/magic.jpeg";
+import RRSR1 from "../Images/rrsr1.jpeg";
 import ImageSlider from "./imageSlider";
 
 const Wrapper = styled.div`
@@ -22,10 +22,17 @@ const Title = styled.div`
 
 function CasinoPage() {
   const slides = [
-    { url: `${Magic}`, title: "Magic" },
-    { url: `${Magic}` },
-    { url: `${Magic}` },
+    { url: `${RRSR1}`, title: "rrsr1" },
+    { url: `${RRSR1}` },
+    { url: `${RRSR1}` },
   ];
+
+  function CasinoPage() {
+    const slides = [
+      { url: `${RRSR2}`, title: "rrsr2" },
+      { url: `${RRSR2}` },
+      { url: `${RRSR2}` },
+  ];   
   const containerStyle = {
     width: "500px",
     height: "280px",
