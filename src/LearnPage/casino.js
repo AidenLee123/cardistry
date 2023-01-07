@@ -9,10 +9,11 @@ import "./index.css";
 
 const Wrapper = styled.div`
   background-color: white;
+  /* width: 100%; */
   height: 100vh;
   display: flex;
   flex-direction: column;
-  /* justify-content: center; */
+  align-items: center;
 `;
 
 const Title = styled.div`
@@ -21,6 +22,7 @@ const Title = styled.div`
   font-weight: 800;
   margin-top: 30px;
   text-align: center;
+  margin-bottom: 30px;
 `;
 
 const ImageWrapper = styled.img`
