@@ -2,7 +2,9 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Magic from "../Images/magic.jpeg";
-import ImageSlider from "./imageSlider";
+
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Wrapper = styled.div`
   background-color: white;
@@ -20,23 +22,27 @@ const Title = styled.div`
   text-align: center;
 `;
 
+const ImageWrapper = styled.img`
+  width: 100%;
+  height: 300px;
+`;
 function CasinoPage() {
-  const slides = [
-    { url: `${Magic}`, title: "Magic" },
-    { url: `${Magic}` },
-    { url: `${Magic}` },
+  const images = [
+    "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
+    "../Images/magic.jpeg",
   ];
-  const containerStyle = {
-    width: "500px",
-    height: "280px",
-    margin: "0 auto",
-  };
+
   return (
     <Wrapper>
       <Title>Casino</Title>
-      <div style={containerStyle}>
-        <ImageSlider slides={slides}></ImageSlider>
-      </div>
+
+      <Fade>
+        {images.map((image, index) => (
+          <div className="each-fade" key={index}>
+            <ImageWrapper src={image}></ImageWrapper>
+          </div>
+        ))}
+      </Fade>
     </Wrapper>
   );
 }
