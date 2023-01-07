@@ -2,7 +2,10 @@ import styled from "styled-components";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import RRSR1 from "../Images/rrsr1.jpeg";
-import ImageSlider from "./imageSlider";
+import Magic from "../Images/magic.jpeg";
+
+import { Fade } from "react-slideshow-image";
+import "react-slideshow-image/dist/styles.css";
 
 const Wrapper = styled.div`
   background-color: white;
@@ -20,30 +23,32 @@ const Title = styled.div`
   text-align: center;
 `;
 
-function CasinoPage() {
-  const slides = [
-    { url: `${RRSR1}`, title: "rrsr1" },
-    { url: `${RRSR1}` },
-    { url: `${RRSR1}` },
-  ];
+const ImageWrapper = styled.img`
+  width: 100%;
+  height: 300px;
+`;
+
 
   function CasinoPage() {
-    const slides = [
-      { url: `${RRSR2}`, title: "rrsr2" },
-      { url: `${RRSR2}` },
-      { url: `${RRSR2}` },
-  ];   
-  const containerStyle = {
-    width: "500px",
-    height: "280px",
-    margin: "0 auto",
-  };
+
+
+  const images = [
+   `${RRSR1}`,
+
+  ];
+
+
   return (
     <Wrapper>
       <Title>Casino</Title>
-      <div style={containerStyle}>
-        <ImageSlider slides={slides}></ImageSlider>
+
+      <Fade>
+        {images.map((image, index) => (
+          <div className="each-fade" key={index}>
+            <ImageWrapper src={image}></ImageWrapper>
       </div>
+        ))}
+      </Fade>
     </Wrapper>
   );
 }
