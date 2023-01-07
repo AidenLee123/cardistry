@@ -29,6 +29,16 @@ const ImageWrapper = styled.img`
   width: 800px;
   height: 300px;
 `;
+
+const DescriptionWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+`;
+
+const Description = styled.div`
+  font-size: 24px;
+`;
 function CasinoPage() {
   const images = [
     "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
@@ -46,6 +56,9 @@ function CasinoPage() {
           </div>
         ))}
       </Fade>
+      <DescriptionWrapper>
+        <Description>dd</Description>
+      </DescriptionWrapper>
     </Wrapper>
   );
 }
