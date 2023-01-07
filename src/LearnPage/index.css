@@ -2,3 +2,8 @@
   display: flex;
   justify-content: center;
 }
+
+.react-slideshow-container {
+  width: 600px;
+  /* margin */
+}
