@@ -70,7 +70,18 @@ function CasinoPage() {
         ))}
       </Fade>
       <DescriptionWrapper>
-        <Description>dd</Description>
+        <Description>양손의 중지를 맞대어 타원형을 만든다</Description>
+        <Description>그대로 손을 내려 카드 주변을 감싼다</Description>
+        <Description>오른손의 중지로 카드의 반을 똑땐다</Description>
+        <Description>중지로 땐 뭉치를 오른쪽으로 가져온다</Description>
+        <Description>마술사의 기준으로 V자를 만든다</Description>
+        <Description>엄지와 중지로 천사를 감싼다</Description>
+        <Description>양손의 손날이 끝에있는 천사를 누른다</Description>
+
+
+
+
+
       </DescriptionWrapper>
     </Wrapper>
   );
