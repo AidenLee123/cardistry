@@ -23,10 +23,12 @@ const Wrapper = styled.div`
 const Title = styled.h1`
   font-size: 100px;
   color: white;
+  font-family: "Luckiest Guy", cursive;
   font-weight: 800;
   margin-top: 30px;
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+  border-bottom: 3px solid;
 `;
 
 const SlideWrapper = styled.div`
@@ -56,13 +58,13 @@ function CasinoPage() {
     `${RRSR6}`,
   ];
   const descriptions = [
-    "양손의 중지를 맞대어 타원형을 만든다",
-    "그대로 손을 내려 카드 주변을 감싼다",
-    "오른손의 중지로 카드의 반을 똑땐다",
-    "중지로 땐 뭉치를 오른쪽으로 가져온다",
-    "마술사의 기준으로 V자를 만든다",
-    "엄지와 중지로 천사를 감싼다",
-    "양손의 손날이 끝에있는 천사를 누른다",
+    ' "양손의 중지를 맞대어 타원형을 만든다"',
+    '"그대로 손을 내려 카드 주변을 감싼다"',
+    '"오른손의 중지로 카드의 반을 똑땐다"',
+    '"중지로 땐 뭉치를 오른쪽으로 가져온다"',
+    '"마술사의 기준으로 V자를 만든다"',
+    '"엄지와 중지로 천사를 감싼다"',
+    '"양손의 손날이 끝에있는 천사를 누른다"',
   ];
 
   return (
