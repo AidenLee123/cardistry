@@ -1,13 +1,10 @@
 import logo from "./logo.svg";
 import "./App.css";
 import LoginPage from "./LoginPage";
-import MainPage from "./MainPage";
-import AcanPage from "./LearnPage/acan";
-import DetectorPage from "./LearnPage/detector";
-import DrunkPage from "./LearnPage/Drunk";
-import TopPage from "./LearnPage/Top";
-import AmbitiousPage from "./LearnPage/ambitious";
+
 import CasinoPage from "./LearnPage/casino";
+import GripPage from "./LearnPage/grip";
+import MainPage from "./MainPage";
 
 import { Routes, Route } from "react-router-dom";
 
@@ -16,13 +13,8 @@ function App() {
     <Routes>
       <Route path="" element={<LoginPage />} />
       <Route path="/main" element={<MainPage />} />
-      <Route path="/acan" element={<AcanPage />} />
-      <Route path="/detector" element={<DetectorPage />} />
-      <Route path="/mama" element={<mamaPage />} />
-      <Route path="/drunk" element={<DrunkPage />} />
-      <Route path="/top" element={<TopPage />} />
-      <Route path="/ambitious" element={<AmbitiousPage />} />
       <Route path="/casino" element={<CasinoPage />} />
+      <Route path="/grip" element={<GripPage />} />
     </Routes>
   );
 }

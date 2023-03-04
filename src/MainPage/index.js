@@ -97,7 +97,7 @@ function MainPage() {
             <ListText> 1. Casino Shuffle Sequence</ListText>
           </Link>
 
-          <Link to="/grips" target="_blank">
+          <Link to="/grip">
             <ListText> 2. Different grips by country</ListText>
           </Link>
 
