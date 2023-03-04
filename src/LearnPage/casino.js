@@ -7,13 +7,9 @@ import RRSR4 from "../Images/rrsr4.jpeg";
 import RRSR5 from "../Images/rrsr5.jpeg";
 import RRSR6 from "../Images/rrsr6.jpeg";
 
-
-
-
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
 import "./index.css";
-
 
 const Wrapper = styled.div`
   background-color: white;
@@ -49,15 +45,13 @@ const Description = styled.div`
 `;
 function CasinoPage() {
   const images = [
-   `${RRSR1}`,
-   `${RRSR2}`,
-   `${RRSR3}`,
-   `${RRSR4}`,
-   `${RRSR5}`,
-   `${RRSR6}`,
-
+    `${RRSR1}`,
+    `${RRSR2}`,
+    `${RRSR3}`,
+    `${RRSR4}`,
+    `${RRSR5}`,
+    `${RRSR6}`,
   ];
-
 
   return (
     <Wrapper>
@@ -66,7 +60,7 @@ function CasinoPage() {
         {images.map((image, index) => (
           <div className="each-fade" key={index}>
             <ImageWrapper src={image}></ImageWrapper>
-      </div>
+          </div>
         ))}
       </Fade>
       <DescriptionWrapper>
