@@ -93,7 +93,7 @@ function MainPage() {
         <div class="threeone">
           <MagicTitle className="title">Gambling Techniques</MagicTitle>
 
-          <Link to="/casino" target="_blank">
+          <Link to="/casino">
             <ListText> 1. Casino Shuffle Sequence</ListText>
           </Link>
 
