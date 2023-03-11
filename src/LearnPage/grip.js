@@ -24,7 +24,7 @@ const Title = styled.h1`
   font-weight: 800;
   margin-top: 30px;
   text-align: center;
-  margin-bottom: 60px;
+  margin-bottom: 10px;
   border-bottom: 3px solid;
 `;
 
@@ -47,8 +47,12 @@ const Description = styled.div`
 `;
 
 const ImageDescription = styled.div`
-  font-size: 20px;
+  font-size: 50px;
+  font-family: cursive;
   font-weight: 700;
+  text-align: center;
+  color: white;
+  margin-bottom: 30px;
 `;
 
 function GripPage() {
@@ -63,12 +67,15 @@ function GripPage() {
     '"양손의 손날이 끝에있는 천사를 누른다"',
   ];
 
+  const titles = ["HHH", "HHH", "HHH"];
+
   return (
     <Wrapper>
       <Title>Grip</Title>
       <Fade>
         {images.map((image, index) => (
           <SlideWrapper>
+            <ImageDescription>{titles[index]}</ImageDescription>
             <div className="each-fade" key={index}>
               <ImageWrapper src={image}></ImageWrapper>
             </div>
