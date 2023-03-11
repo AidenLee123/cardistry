@@ -1,5 +1,8 @@
 import styled from "styled-components";
 import React, { useState } from "react";
+import GRIP1 from "../Images/grip/grip1.jpeg";
+import GRIP2 from "../Images/grip/grip2.jpeg";
+import GRIP3 from "../Images/grip/grip3.jpeg";
 
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -42,20 +45,34 @@ const Description = styled.div`
   font-weight: 800;
   color: white;
 `;
+
 function GripPage() {
-  const images = [];
-  const descriptions = [];
+  const images = [
+    `${GRIP1}`,
+    `${GRIP2}`,
+    `${GRIP3}`,
+  ];
+  const descriptions = [
+    ' "메카닉 그립"',
+    '"그대로 손을 내려 카드 주변을 감싼다"',
+    '"오른손의 중지로 카드의 반을 똑땐다"',
+    '"중지로 땐 뭉치를 오른쪽으로 가져온다"',
+    '"마술사의 기준으로 V자를 만든다"',
+    '"엄지와 중지로 천사를 감싼다"',
+    '"양손의 손날이 끝에있는 천사를 누른다"',
+  ];
 
   return (
     <Wrapper>
+
       <Title>Grip</Title>
       <Fade>
         {images.map((image, index) => (
           <SlideWrapper>
             <div className="each-fade" key={index}>
-              {/* <ImageWrapper src={image}></ImageWrapper> */}
+              <ImageWrapper src={image}></ImageWrapper>
             </div>
-            {/* <Description>{descriptions[index]}</Description> */}
+            <Description>{descriptions[index]}</Description>
           </SlideWrapper>
         ))}
       </Fade>
