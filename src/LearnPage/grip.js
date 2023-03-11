@@ -58,8 +58,8 @@ const ImageDescription = styled.div`
 function GripPage() {
   const images = [`${GRIP1}`, `${GRIP2}`, `${GRIP3}`];
   const descriptions = [
-    ' "메카닉 그립"',
-    '"그대로 손을 내려 카드 주변을 감싼다"',
+    ' "왼쪽에 엄지, 앞에 검지, 오른쪽에 중지 넷째 그리고 새끼 손가락"',
+    '"메타닉 그립이랑 다르게 중지와 검지가 카드 앞을 감싼다"',
     '"오른손의 중지로 카드의 반을 똑땐다"',
     '"중지로 땐 뭉치를 오른쪽으로 가져온다"',
     '"마술사의 기준으로 V자를 만든다"',
@@ -67,7 +67,7 @@ function GripPage() {
     '"양손의 손날이 끝에있는 천사를 누른다"',
   ];
 
-  const titles = ["HHH", "HHH", "HHH"];
+  const titles = ["메카닉 그립", "어드네스 그립", "비들 그립"];
 
   return (
     <Wrapper>
