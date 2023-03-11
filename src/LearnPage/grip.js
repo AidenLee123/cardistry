@@ -42,6 +42,8 @@ const Description = styled.div`
   font-weight: 800;
   color: white;
 `;
+
+const Title = styled.div``;
 function GripPage() {
   const images = [];
   const descriptions = [];
