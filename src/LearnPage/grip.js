@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import GRIP1 from "../Images/grip/grip1.jpeg";
 import GRIP2 from "../Images/grip/grip2.jpeg";
 import GRIP3 from "../Images/grip/grip3.jpeg";
+import Video from "../Images/grip/erdnase.mp4";
 
 import { Fade } from "react-slideshow-image";
 import "react-slideshow-image/dist/styles.css";
@@ -56,7 +57,11 @@ const ImageDescription = styled.div`
 `;
 
 function GripPage() {
-  const images = [`${GRIP1}`, `${GRIP2}`, `${GRIP3}`];
+  const images = [
+    { type: "image", source: `${GRIP1}` },
+    { type: "video", source: `${Video}` },
+    { type: "image", source: `${GRIP3}` },
+  ];
   const descriptions = [
     ' "왼쪽에 엄지, 앞에 검지, 오른쪽에 중지 넷째 그리고 새끼 손가락"',
     '"메타닉 그립이랑 다르게 중지와 검지가 카드 앞을 감싼다"',
@@ -72,12 +77,19 @@ function GripPage() {
   return (
     <Wrapper>
       <Title>Grip</Title>
+
       <Fade>
         {images.map((image, index) => (
           <SlideWrapper>
             <ImageDescription>{titles[index]}</ImageDescription>
             <div className="each-fade" key={index}>
-              <ImageWrapper src={image}></ImageWrapper>
+              {image.type == "image" ? (
+                <ImageWrapper src={image.source}></ImageWrapper>
+              ) : (
+                <video width="auto" height="300" autoplay controls>
+                  <source src={image.source} type="video/mp4"></source>
+                </video>
+              )}
             </div>
             <Description>{descriptions[index]}</Description>
           </SlideWrapper>
