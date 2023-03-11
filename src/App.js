@@ -7,6 +7,7 @@ import GripPage from "./LearnPage/grip";
 import MainPage from "./MainPage";
 
 import { Routes, Route } from "react-router-dom";
+import RibbonPage from "./LearnPage/ribbon";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Route path="/main" element={<MainPage />} />
       <Route path="/casino" element={<CasinoPage />} />
       <Route path="/grip" element={<GripPage />} />
+      <Route path="/ribbon" element={<RibbonPage />} />
     </Routes>
   );
 }

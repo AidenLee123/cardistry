@@ -101,7 +101,7 @@ function MainPage() {
             <ListText> 2. Different grips by country</ListText>
           </Link>
 
-          <Link to="/ribbon" target="_blank">
+          <Link to="/ribbon">
             <ListText> 3. Ribbon spread</ListText>
           </Link>
 
