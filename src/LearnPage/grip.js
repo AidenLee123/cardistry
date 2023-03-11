@@ -43,11 +43,15 @@ const Description = styled.div`
   color: white;
 `;
 
-const Title = styled.div``;
+const ImageDescription = styled.div`
+  font-size: 20px;
+  font-weight: 700;
+`;
+
 function GripPage() {
   const images = [];
-  const descriptions = [];
-
+    const descriptions = [];
+    const titles = 
   return (
     <Wrapper>
       <Title>Grip</Title>
@@ -55,9 +59,10 @@ function GripPage() {
         {images.map((image, index) => (
           <SlideWrapper>
             <div className="each-fade" key={index}>
-              {/* <ImageWrapper src={image}></ImageWrapper> */}
+              <ImageDescription>{}</ImageDescription>
+              <ImageWrapper src={image}></ImageWrapper>
             </div>
-            {/* <Description>{descriptions[index]}</Description> */}
+            <Description>{descriptions[index]}</Description>
           </SlideWrapper>
         ))}
       </Fade>
